@@ -1,3 +1,4 @@
+package hoja8;
 import java.util.*;
 public class VectorHeap<E extends Comparable<E>> implements PriorityQueue<E>
 {
@@ -109,4 +110,29 @@ public class VectorHeap<E extends Comparable<E>> implements PriorityQueue<E>
 		if (data.size() > 1) pushDownRoot(0);
 		return minVal;
 	}
+
+    @Override
+    public E getFirst() {
+        return data.firstElement();
+    }
+
+    @Override
+    public boolean isEmpty() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public int size() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void clear() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+    
+    public int compareTo(Paciente paciente){
+        Paciente otro= (Paciente)paciente;
+		return paciente.getCodigo().compareTo(otro.getCodigo());
+    }
 }
