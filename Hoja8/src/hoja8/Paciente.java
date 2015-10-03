@@ -1,9 +1,9 @@
-
+package hoja8;
 /**
  *
  * @author Ma. Belen
  */
-package hoja8;
+
 public class Paciente implements Comparable<Paciente>{
 	String nombre;
 	String sintoma;

@@ -58,6 +58,7 @@ public class VectorHeap<E extends Comparable<E>> implements PriorityQueue<E>
 		data.set(leaf,value);
 	}
 
+        @Override
 	public void add(E value)
 	// pre: value is non-null comparable
 	// post: value is added to priority queue
@@ -100,6 +101,7 @@ public class VectorHeap<E extends Comparable<E>> implements PriorityQueue<E>
 		}
 	}
 
+        @Override
 	public E remove()
 	// pre: !isEmpty()
 	// post: returns and removes minimum value from queue
